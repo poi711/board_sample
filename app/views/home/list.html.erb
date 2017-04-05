@@ -1,0 +1,7 @@
+<h1>게시글 리스트 입니다.</h1>
+<% @all_post.each do |x|  %>
+제목 : <%= x.name %>
+내용 : <%= x.content %>
+시간 : <%= x.created_at %>
+<hr><hr>
+<% end %>
